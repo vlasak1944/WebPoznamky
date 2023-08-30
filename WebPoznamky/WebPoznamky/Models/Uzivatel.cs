@@ -10,8 +10,6 @@ namespace WebPoznamky.Models
         [Required]
         public string Heslo { get; set; }
         [Required]
-        public string Email { get; set; }
-        [Required]
         public List<Poznamka> Poznamky { get; set; }
     }
 }
