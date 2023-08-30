@@ -8,7 +8,7 @@ namespace WebPoznamky.Models
         [Required]
         public string Nadpis { get; set; }
         [Required]
-        public string Telo{ get; set; }
+        public string Telo { get; set; }
         [Required]
 
         public Uzivatel Autor { get; set; }

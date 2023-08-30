@@ -87,3 +87,4 @@ C:\Users\TEMP\Desktop\WebPoznamky\WebPoznamky\WebPoznamky\bin\Debug\net6.0\runti
 C:\Users\TEMP\Desktop\WebPoznamky\WebPoznamky\WebPoznamky\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
 C:\Users\TEMP\Desktop\WebPoznamky\WebPoznamky\WebPoznamky\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
 C:\Users\TEMP\Desktop\WebPoznamky\WebPoznamky\WebPoznamky\obj\Debug\net6.0\WebPoznamky.csproj.CopyComplete
+C:\Users\TEMP\Desktop\WebPoznamky\WebPoznamky\WebPoznamky\bin\Debug\net6.0\BCrypt.Net-Next.dll

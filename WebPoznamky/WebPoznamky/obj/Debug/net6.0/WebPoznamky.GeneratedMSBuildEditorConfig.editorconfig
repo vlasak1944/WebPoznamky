@@ -16,12 +16,28 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\TEMP\Desktop\WebPoznamky\WebPoznamky\WebPoznamky
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/TEMP/Desktop/WebPoznamky/WebPoznamky/WebPoznamky/Views/Home/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFcnJvci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/TEMP/Desktop/WebPoznamky/WebPoznamky/WebPoznamky/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/TEMP/Desktop/WebPoznamky/WebPoznamky/WebPoznamky/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/TEMP/Desktop/WebPoznamky/WebPoznamky/WebPoznamky/Views/Poznamka/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG96bmFta2FcRGV0YWlsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/TEMP/Desktop/WebPoznamky/WebPoznamky/WebPoznamky/Views/Poznamka/Pridat.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG96bmFta2FcUHJpZGF0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/TEMP/Desktop/WebPoznamky/WebPoznamky/WebPoznamky/Views/Poznamka/Vsechny.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG96bmFta2FcVnNlY2hueS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/TEMP/Desktop/WebPoznamky/WebPoznamky/WebPoznamky/Views/Shared/Error.cshtml]

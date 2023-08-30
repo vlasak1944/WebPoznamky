@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "iwBe87+BB6B4UUcCKS93sgasc29YDz5L51deEihxc4FOv1c+twgXDVgy8wnJ/50dir4fX6bSemRh6h3prTlSgg==",
+  "dgSpecHash": "woR35iLOFmjp0iKY9UGuPBQKibNP5XpRjGmK0R92sJmgzvedQ3WxR2lNqH+LAjyhSiLLY82XNRKIPiX9o94/+w==",
   "success": true,
   "projectFilePath": "C:\\Users\\TEMP\\Desktop\\WebPoznamky\\WebPoznamky\\WebPoznamky\\WebPoznamky.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\TEMP\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\TEMP\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
+    "C:\\Users\\TEMP\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\TEMP\\.nuget\\packages\\castle.core\\5.1.0\\castle.core.5.1.0.nupkg.sha512",
     "C:\\Users\\TEMP\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",

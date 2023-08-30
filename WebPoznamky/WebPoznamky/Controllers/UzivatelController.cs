@@ -5,25 +5,93 @@ using System.Linq;
 using Microsoft.AspNetCore.Http;
 namespace WebPoznamky.Controllers
 {
-    public class UzivatelController : Controller
-    {
-        private readonly WebPoznamkyContext _context;
-
-        public UzivatelController(WebPoznamkyContext context)
+        public class UzivatelController : Controller
         {
-            _context = context;
-        }
+            private readonly WebPoznamkyContext _context;
 
-        [HttpGet]
-        public IActionResult Prihlasit()
-        {
-            return View();
-        }
-        [HttpPost]
-        public IActionResult Registrovat()
-        {
-            return View();
-        }
+            public UzivatelController(WebPoznamkyContext context)
+            {
 
+                _context = context;
+            }
+            [HttpGet]
+            public IActionResult Prihlasit()
+            {
+                return View();
+            }
+            [HttpGet]
+            public IActionResult Registrovat()
+            {
+                return View();
+            }
+
+            [HttpPost]
+
+            public IActionResult Registrovat(string jmeno, string heslo, string heslo_kontrola)
+            {
+                if (jmeno == null || jmeno.Trim().Length == 0)
+                    return Redirect("Registrovat");
+                if (heslo == null || heslo.Trim().Length == 0)
+                    return Redirect("Registrovat");
+                if (heslo != heslo_kontrola)
+                    return Redirect("Registrovat");
+                Uzivatel totozny = _context.Uzivatele
+                    .Where(u => u.Jmeno == jmeno)
+                    .FirstOrDefault();
+
+
+                if (totozny != null)
+                    return Redirect("Registrovat");
+                string hash = BCrypt.Net.BCrypt.HashPassword(heslo);
+                Uzivatel novyUzivatel = new Uzivatel { Jmeno = jmeno, Heslo = hash };
+
+                _context.Uzivatele.Add(novyUzivatel);
+                _context.SaveChanges();
+
+                return Redirect("Prihlasit");
+            }
+            [HttpPost]
+            public IActionResult Prihlasit(string jmeno, string heslo)
+            {
+                if (jmeno == null || heslo == null)
+                    return Redirect("Prihlasit");
+
+
+                Uzivatel hledany = _context.Uzivatele
+                     .FirstOrDefault(u => u.Jmeno == jmeno);
+                if (hledany == null)
+                    return Redirect("Prihlasit");
+
+                if (!BCrypt.Net.BCrypt.Verify(heslo, hledany.Heslo))
+                    return Redirect("Prihlasit");
+
+                HttpContext.Session.SetString("Uzivatel", hledany.Jmeno);
+
+
+                return Redirect("Profil");
+            }
+
+            public IActionResult Profil()
+            {
+                if (HttpContext.Session.GetString("Uzivatel") == null)
+                    return Redirect("Prihlasit");
+
+                Uzivatel prihlaseny = _context.Uzivatele
+                    .Where(u => u.Jmeno == HttpContext.Session.GetString("Uzivatel"))
+                    .FirstOrDefault();
+
+                if (prihlaseny == null)
+                    return Redirect("Odhlasit");
+
+                return View(prihlaseny);
+
+                return View();
+            }
+            public IActionResult Odhlasit()
+            {
+                HttpContext.Session.Clear();
+
+                return Redirect("/Home/Index");
+            }
+        }
     }
-}
