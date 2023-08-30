@@ -15,5 +15,6 @@ namespace WebPoznamky.Data
                 .HasOne(c => c.Autor)
                 .WithMany(a => a.Poznamky);
         }
+
     }
 }
