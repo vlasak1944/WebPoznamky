@@ -3,6 +3,8 @@ using WebPoznamky.Data;
 using WebPoznamky.Models;
 using System.Linq;
 using Microsoft.AspNetCore.Http;
+using System.ComponentModel.DataAnnotations;
+
 namespace WebPoznamky.Controllers
 {
         public class UzivatelController : Controller
@@ -27,7 +29,7 @@ namespace WebPoznamky.Controllers
 
             [HttpPost]
 
-            public IActionResult Registrovat(string jmeno, string heslo, string heslo_kontrola)
+            public IActionResult Registrovat(string jmeno, string heslo, string heslo_kontrola, string email)
             {
                 if (jmeno == null || jmeno.Trim().Length == 0)
                     return Redirect("Registrovat");
@@ -35,6 +37,8 @@ namespace WebPoznamky.Controllers
                     return Redirect("Registrovat");
                 if (heslo != heslo_kontrola)
                     return Redirect("Registrovat");
+                if (email == null || email.Trim().Length == 0)
+                return Redirect("Registrovat");
                 Uzivatel totozny = _context.Uzivatele
                     .Where(u => u.Jmeno == jmeno)
                     .FirstOrDefault();
