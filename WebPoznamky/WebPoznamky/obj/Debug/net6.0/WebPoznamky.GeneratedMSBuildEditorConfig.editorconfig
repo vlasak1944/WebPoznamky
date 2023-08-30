@@ -32,6 +32,18 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/TEMP/Desktop/WebPoznamky/WebPoznamky/WebPoznamky/Views/Uzivatel/Prihlasit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXppdmF0ZWxcUHJpaGxhc2l0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/TEMP/Desktop/WebPoznamky/WebPoznamky/WebPoznamky/Views/Uzivatel/Profil.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXppdmF0ZWxcUHJvZmlsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/TEMP/Desktop/WebPoznamky/WebPoznamky/WebPoznamky/Views/Uzivatel/Registrovat.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXppdmF0ZWxcUmVnaXN0cm92YXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/TEMP/Desktop/WebPoznamky/WebPoznamky/WebPoznamky/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
